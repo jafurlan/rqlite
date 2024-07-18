@@ -1,4 +1,4 @@
-module goki.dev/rqlite
+module github.com/jafurlan/rqlite
 
 go 1.21
 
