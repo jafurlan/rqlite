@@ -197,7 +197,7 @@ func (dialector Dialector) Explain(sql string, vars ...interface{}) string {
 func (dialector Dialector) DataTypeOf(field *schema.Field) string {
 	switch field.DataType {
 	case schema.Bool:
-		return "numeric"
+		return "text"
 	case schema.Int, schema.Uint:
 		if field.AutoIncrement {
 			// doesn't check `PrimaryKey`, to keep backward compatibility
